@@ -1,0 +1,232 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #234317;
+  background: #fffbea;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e6e9d5;
+  padding: 12px 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 40;
+  box-shadow: 0 2px 8px rgba(150,186,48,0.07);
+  transition: all .3s;
+}
+
+#navbar.sticky {
+  background: #bfd194;
+  box-shadow: 0 2px 8px rgba(150,186,48,0.15);
+}
+
+.nav-logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #234317;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color .2s;
+  align-items: center;
+  padding-right: 20px; /* crea espacio a la derecha */
+  gap: 16px; /* controla espacio entre enlaces */
+  text-align: center;
+}
+
+.nav-links .cta {
+  display: inline-block;
+  background: #d2ad47;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 25px;
+  margin-left: 8px;
+  font-weight: 700;
+  box-shadow: 0 1px 5px rgba(210,173,71,0.15);
+}
+.nav-links a:hover { color: #9fbf3b; }
+.nav-links .cta:hover { background: #e8c35c; }
+
+.header-banner {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6ecd9;
+  margin-top: 80px;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 20px 20px 0;
+  box-shadow: 0 2px 8px rgba(150,186,48,0.07);
+}
+
+.header-text {
+  width: 40%;
+  padding: 25px;
+}
+.header-text h1 {
+  font-size: 2.5em;
+  color: #234317;
+  margin-bottom: 0.6em;
+}
+.header-text h2 {
+  font-size: 1.3em;
+  color: #9fbf3b;
+  margin-bottom: 1em;
+}
+.header-text .cta {
+  margin-top: 16px;
+}
+
+section {
+  margin: 45px auto;
+  max-width: 1100px;
+  padding: 25px 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(210,173,71,0.035);
+}
+
+#catalogo h2, #nosotros h2, #contacto h2, #testimonios h2, #novedades h2 {
+  color: #d2ad47;
+  margin-bottom: 1em;
+  font-size: 2rem;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  justify-content: center;
+}
+.producto {
+  background: #f6ecd9;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(210,173,71,0.1);
+  width: 300px;
+  text-align: center;
+}
+.producto img {
+  width: 80%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1em;
+}
+.producto .precio {
+  font-weight: bold;
+  color: #bf6d2b;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+.producto .cta {
+  margin-top: 8px;
+}
+
+.testimonios-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+blockquote {
+  background: #e6e9d5;
+  border-left: 5px solid #d2ad47;
+  padding: 14px 20px;
+  max-width: 380px;
+  border-radius: 6px;
+  font-style: italic;
+}
+
+#nosotros p {
+  font-size: 1.25em;
+  line-height: 1.7em;
+}
+
+form {
+  background: #f6ecd9;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 680px;
+  margin: 20px auto;
+  box-shadow: 0 2px 8px rgba(210,173,71,0.07);
+}
+.form-row {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 12px;
+}
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 4px 0;
+  border: 1px solid #e6e9d5;
+  border-radius: 6px;
+  font-size: 1em;
+  resize: vertical;
+}
+form button.cta {
+  background: #d2ad47;
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+.datos-contacto {
+  margin-top: 18px;
+  font-size: 1.05rem;
+}
+.redes-sociales {
+  margin: 12px 0;
+}
+.redes-sociales img {
+  width: 36px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+footer {
+  background: #e6e9d5;
+  text-align: center;
+  padding: 24px 0;
+  color: #234317;
+  margin-top: 40px;
+}
+.footer-logo img {
+  height: 42px;
+  display: block;
+  margin: 0 auto 12px auto;
+}
+
+.cta {
+  display: inline-block;
+  margin-right: 24px; /* Ajusta la distancia deseada */
+}
+
+@media (max-width: 950px) {
+  .header-banner { flex-direction: column; height: auto; }
+  .banner-img, .header-text { width: 100%; }
+  .banner-img { border-radius: 12px; margin-bottom: 18px;}
+  .header-text { padding: 12px; }
+  .catalog-list { flex-direction: column; gap: 16px;}
+  .testimonios-list { flex-direction: column;}
+  section { margin: 24px 2vw; }
+}

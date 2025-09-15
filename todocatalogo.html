@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo el catálogo - Jomer Selección</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo completo de productos Jomer: congelados, frescos y frutas troceadas. Elige calidad y tradición en Tudela, Navarra.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .catalog-section { margin-bottom: 3em; }
+    .catalog-section h2 { font-size: 1.8em; margin-bottom: 0.5em; }
+    .catalog-grid { display: flex; flex-wrap: wrap; gap: 2em; }
+    .catalog-item { background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.06); padding:1em; width:200px; text-align:center; }
+    .catalog-img { width:120px; height:120px; object-fit:cover; border-radius:8px; margin-bottom:0.8em; cursor:pointer;}
+    @media (max-width: 600px) {
+      .catalog-grid { flex-direction: column; gap:1em;}
+      .catalog-item { width:100%;}
+    }
+    .catalog-nav { margin:2em 0 2em 0; }
+    .catalog-nav a { margin-right:1.5em; padding:0.6em 1.2em; background:#f5f5f5; border-radius:5px; text-decoration:none; color:#275b3d; font-weight:700;}
+    .catalog-nav a:hover { background:#e3e3c8;}
+    /* Modal styles */
+    .modal { display:none; position:fixed; z-index:1000; left:0; top:0; width:100%; height:100%; overflow:auto; background:rgba(0,0,0,0.8);}
+    .modal-content { display:block; margin:auto; max-width:80vw; max-height:80vh; border-radius:12px;}
+    .close { position:absolute; top:32px; right:48px; color:#fff; font-size:48px; font-weight:bold; cursor:pointer;}
+    #caption { margin-top:24px; text-align:center; color:#fff; font-size:1.2em;}
+    @media (max-width:600px){
+      .modal-content { max-width:96vw; max-height:60vh;}
+      .close { right:24px; top:24px; font-size:38px;}
+      #caption { font-size:1em;}
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+  <div class="nav-logo">
+    <a href="principal.html"><img src="jomer.jpg" alt="Jomer Logo"></a>
+  </div>
+  <div class="nav-links">
+    <a href="todocatalogo.html">Todo el catálogo</a>
+    <a href="principal.html#catalogo">Catálogo aceite</a>
+    <a href="principal.html#nosotros">Sobre Nosotros</a>
+    <a href="principal.html#novedades">Novedades</a>
+    <a href="principal.html#contacto">Contacto</a>
+    <a href="principal.html#comprar" class="cta">Comprar ahora</a>
+  </div>
+</nav>
+
+
+  <main>
+
+    <!-- Sección Congelado -->
+    <section id="congelado" class="catalog-section">
+      <h2>Congelado (15 productos)</h2>
+      <div class="catalog-grid">
+        <div class="catalog-item">
+          <img src="alcachofa entera mej f.png" alt="Cultivada con cariño en tierras arcillosas con un PH perfecto para esta verdura
+rica en vitaminas y con grandes propiedades.
+
+Producto limpio envasado al vacío y ultracongelado sin aditivos ni tratamientos.
+Listo para incorporar al agua hirviendo sin descongelar. El transporte es
+gratuito en cajas fabricadas con polipropileno expandido. Este embalaje es apto
+para el reparto de alimentos en bares, restaurantes, comedores, caterings, tiendas
+de verduras, puestos de mercado, etc. Además, dentro de las cajas se incluyen
+placas de refrigeración para mantener la temperatura.
+
+Caja completa de 20 docenas" class="catalog-img">
+          <h3>Alachofa entera</h3>
+          <p>caja de 6 unidades de docena</p>
+        </div>
+        <div class="catalog-item">
+          <img src="alcachofa partida mej f.png" alt="Cultivada con cariño en tierras arcillosas con un PH perfecto para esta verdura
+rica en vitaminas y con grandes propiedades.
+
+Producto limpio envasado al vacío y ultracongelado sin aditivos ni tratamientos.
+Listo para incorporar al agua hirviendo sin descongelar. El transporte es
+gratuito en cajas fabricadas con polipropileno expandido. Este embalaje es apto
+para el reparto de alimentos en bares, restaurantes, comedores, caterings, tiendas
+de verduras, puestos de mercado, etc. Además, dentro de las cajas se incluyen
+placas de refrigeración para mantener la temperatura.
+
+Caja completa de 20 docenas" class="catalog-img">
+          <h3>Alcachofa partida</h3>
+          <p>caja de 6 unidades de docena</p>
+        </div>
+        <div class="catalog-item">
+          <img src="boletus mej f.png" alt="boletus" class="catalog-img">
+          <h3>boletus</h3>
+          <p>1kg</p>
+        </div>
+        <div class="catalog-item">
+          <img src="esparrago extra mej f.png" alt="Espárrago limpio de Tudela, LIMPIO y envasado al vacío
+
+Tierno, grueso y jugoso. Cuidado con cariño sin ver el sol. El mejor espárrago del
+mundo puesto en la puerta de tu casa o negocio.
+
+Se envía limpio, congelado en caja fabricada con polipropileno expandido,
+material 100% reciclable y apto para el reparto de alimentos en bares,
+restaurantes, hoteles, etc. Además, dentro de las cajas se incluyen placas de
+refrigeración para mantener la temperatura." class="catalog-img">
+          <h3>esparrago extra</h3>
+          <p>caja de 18 unidades de 1kg</p>
+        </div>
+        <div class="catalog-item">
+          <img src="fresa mej f.png" alt="fresa" class="catalog-img">
+          <h3>fresa</h3>
+          <p>1kg</p>
+        </div>
+        <div class="catalog-item">
+          <img src="guisantes congelados mej f.png" alt="Producto de primera categoría. Es un producto que se envía congelado.
+
+El transporte es en cajas fabricadas con polipropileno expandido. Este embalaje es apto para el reparto de alimentos en bares, restaurantes y comercios. Además, dentro de las cajas se incluyen placas de refrigeración para mantener la temperatura.
+
+Producto en el punto óptimo de maduración y sabor y con sus propiedades organolépticas intactas: color, sabor, olor y textura." class="catalog-img">
+          <h3>guisantes</h3>
+          <p>caja de 10 bolsas de 1kg</p>
+        </div>
+        <div class="catalog-item">
+          <img src="habas super baby congeladas mej f.png" alt="habas super baby congeladas" class="catalog-img">
+          <h3>habas super baby</h3>
+          <p>1kg</p>
+        </div>
+        <div class="catalog-item">
+          <img src="higos mej f.png" alt="higos" class="catalog-img">
+          <h3>higos</h3>
+          <p>1kg</p>
+        </div>
+        <div class="catalog-item">
+          <img src="pimiento asado congelado mej f.png" alt="Producto de primera categoría.
+Producto seleccionado, asado, limpio y congelado por nosotros en su mejor punto de maduración para que lo puedas disfrutar todo el año.
+
+El transporte es en caja de poliestireno. Este embalaje es apto para el reparto de alimentos en bares, restaurantes, comedores, caterings y puestos de mercado.
+Dentro de las cajas se incluyen placas de refrigeración para mantener la temperatura. ¡Pruébanos con tu mejor proveedor de frutas y verduras!" " class="catalog-img">
+          <h3>pimiento del cristal rojo limpio</h3>
+          <p> caja 5 unidades de 1 kg</p>
+        </div>
+        <div class="catalog-item">
+          <img src="pimiento cristal rojo asado mej f.png" alt="Producto de primera categoría.
+Producto seleccionado, asado, limpio y congelado por nosotros en su mejor punto de maduración para que lo puedas disfrutar todo el año.
+
+El transporte es en caja de poliestireno. Este embalaje es apto para el reparto de alimentos en bares, restaurantes, comedores, caterings y puestos de mercado.
+Dentro de las cajas se incluyen placas de refrigeración para mantener la temperatura. ¡Pruébanos con tu mejor proveedor de frutas y verduras!" class="catalog-img">
+          <h3>pimiento cristal rojo limpio asado</h3>
+          <p>caja 5 unidades de 1 kg</p>
+        </div>
+        <div class="catalog-item">
+          <img src="pimiento piquillo mej f.png" alt="
+Producto de primera categoría perfecto para restaurantes, bares, tiendas y
+restauración en general. Es un producto que se envía congelado.
+
+El transporte es en cajas fabricadas con polipropileno expandido. Este embalaje es
+apto para el reparto de alimentos a bares y restaurantes. Además, dentro de las
+cajas se incluyen placas de refrigeración para mantener el frío.
+
+Cada caja contiene 55 bolsas de 250 grs." class="catalog-img">
+          <h3>pimiento piquillo</h3>
+          <p>caja de 14 unidades de 250 grs</p>
+        </div>
+        <div class="catalog-item">
+          <img src="pimiento verde asado congelado mej f.png" alt="Producto de primera categoría.
+Producto seleccionado, asado, limpio y congelado por nosotros en su mejor punto de maduración para que lo puedas disfrutar todo el año.
+
+El transporte es en caja de poliestireno. Este embalaje es apto para el reparto de alimentos en bares, restaurantes, comedores, caterings y puestos de mercado.
+Dentro de las cajas se incluyen placas de refrigeración para mantener la temperatura. ¡Pruébanos con tu mejor proveedor de frutas y verduras!" class="catalog-img">
+          <h3>pimiento verde asado</h3>
+          <p>caja 5 unidades de 1kg</p>
+        </div>
+        <div class="catalog-item">
+          <img src="pochas tudela congeladas mej f.png" alt="Producto de primera categoría. Es un producto que se envía congelado y en
+transporte rápido.
+
+El transporte es en cajas fabricadas con polipropileno expandido. Este embalaje es
+apto para el reparto de alimentos en bares, restaurantes, puestos de mercado,
+empresas de catering, etc. Además, dentro de las cajas se incluyen placas de frío
+para mantener la temperatura constante.
+IVA Incluido y envío gratis.
+
+Producto envasado al vacío en su temporada y en el punto óptimo de maduración
+y sabor y con sus propiedades organolépticas intactas: color, sabor, olor y textura." class="catalog-img">
+          <h3>pochas tudela</h3>
+          <p>caja 10 bolsas de 1kg</p>
+        </div>
+        <div class="catalog-item">
+          <img src="rebollon mej f.png" alt="rebollon" class="catalog-img">
+          <h3>rebollon</h3>
+          <p>500gr</p>
+        </div>
+        <div class="catalog-item">
+          <img src="trompeta amarilla mej f.png" alt="trompeta amarilla" class="catalog-img">
+          <h3>trompeta amarilla</h3>
+          <p>500gr</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Fresco -->
+    <section id="fresco" class="catalog-section">
+      <h2>Fresco (31 productos)</h2>
+      <div class="catalog-grid">
+        <!-- Ejemplo de elemento fresco -->
+        <div class="catalog-item">
+          <img src="acelga limpia mej f.png" alt="Producto de primera categoria. Es un producto limpio, fresco y envasado
+          
+          Caducidad: 7" class="catalog-img">
+          <h3>acelga limpia</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="achicoria limpia mej f.png" alt="Producto de primera categoria. Es un producto limpio, fresco y envasado
+          
+          Caducidad: 7 dias" class="catalog-img">
+          <h3>achicoria limpia</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="alcachofa fresca 12 entera mej f.png" alt="Producto de primera categoria. Es un producto limpio, fresco y envasado
+          
+          Caducidad: 10" class="catalog-img">
+          <h3>alcachofa fresca 12 unidades entera</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="alcachofa fresca mej f.png" alt="Producto de primera categoria. Es un producto limpio, fresco y envasado
+          
+          Caducidad: 10" class="catalog-img">
+          <h3>alcachofa fresca</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="apio mej f.png" alt="apio" class="catalog-img">
+          <h3>apio</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="berza limpia mej f.png" alt="Producto deprimera categoria. Es un producto limpio, fresco y envasado
+          
+          Caducidad: 7 dias" class="catalog-img">
+          <h3>berza limpia</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="boniato mej f.png" alt="boniato" class="catalog-img">
+          <h3>boniato</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="borraja limpia mej f.png" alt="Producto de primera categoria. Es un producto limpio, fresco y envasado
+          
+          Caducidad: 10" class="catalog-img">
+          <h3>borraja limpia</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="brocoli limpio mej f.png" alt="Producto de primera categoria. Es un producto limpio, fresco y envasado
+          
+          Caducidad: 10" class="catalog-img">
+          <h3>brocoli limpio</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="calabacin laminas mej f.png" alt="Producto deprimera categoria. Es un producto limpio, fresco y envasado
+          
+          Caducidad: 7 dias" class="catalog-img">
+          <h3>calabacin laminas</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="calabacin tiras mej f.png" alt="Producto deprimera categoria. Es un producto limpio, fresco y envasado
+          
+          Caducidad: 7 dias" class="catalog-img">
+          <h3>calabacin tiras</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="calabaza fresca mej f.png" alt="calabaza fresca" class="catalog-img">
+          <h3>calabaza fresca</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="cardo mej f.png" alt="cardo" class="catalog-img">
+          <h3>cardo</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="cardo rojo agreda mej f.png" alt="cardo rojo agreda" class="catalog-img">
+          <h3>cardo rojo agreda</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="cebolleta 12 un mej f.png" alt="cebolleta 12 unidades" class="catalog-img">
+          <h3>cebolleta 12 unidades</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="cebolletas 6 un mej f.png" alt="cebolletas 6 unidades" class="catalog-img">
+          <h3>cebolletas 6 unidades</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="cogollos 6 un 12 mit mej f.png" alt="Producto fresco, cortado por la mitad, limpio y listo para consumir" class="catalog-img">
+          <h3>cogollos 6 unidades 12 mitades</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="coliflor limpia mej f.png" alt="Producto de primera categoria. Es un producto limpio, fresco y envasado
+          
+          Caducidad: 10 dias" class="catalog-img">
+          <h3>coliflor limpia</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="corazones de cogollo mej f.png" alt="corazones de cogollo" class="catalog-img">
+          <h3>corazones de cogollo</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="ensalada de lechuga blanca radicchio y escarola mej f.png" alt="Producto de primera categoria. Es un producto limpio, fresco y envasado" class="catalog-img">
+          <h3>ensalada de lechuga blanca radicchio y escarola</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="esparrago b pelado mej f.png" alt="esparrago pelado" class="catalog-img">
+          <h3>esparrago pelado</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="esparrago limpio mej f.png" alt="esparrago limpio" class="catalog-img">
+          <h3>esparrago limpio</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="judia verde limpia mej f.png" alt="Producto de primera categoria. Es un producto limpio, fresco y envasado" class="catalog-img">
+          <h3>judia verde limpia</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="lechuga blanca mej f.png" alt="lechuga blanca" class="catalog-img">
+          <h3>lechuga blanca</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="patata corte 3306 mej f.png" alt="patata corte 3306" class="catalog-img">
+          <h3>patata corte 3306</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="patata corte brava mej f.png" alt="patata corte brava" class="catalog-img">
+          <h3>patata corte brava</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="patata corte chip mej f.png" alt="patata corte chip" class="catalog-img">
+          <h3>patata corte chip</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="patata corte panadera mej f.png" alt="patata corte panadera" class="catalog-img">
+          <h3>patata corte panadera</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="puerro limpio mej f.png" alt="puerro limpio" class="catalog-img">
+          <h3>puerro limpio</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="rabaneta mej f.png" alt="rabaneta" class="catalog-img">
+          <h3>rabaneta</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="setas tiras mej f.png" alt="setas tiras" class="catalog-img">
+          <h3>setas tiras</h3>
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Frutas Troceadas -->
+    <section id="troceadas" class="catalog-section">
+      <h2>Frutas troceadas (5 productos)</h2>
+      <div class="catalog-grid">
+        <div class="catalog-item">
+          <img src="fresa limpia mej f.png" alt="fresa limpia" class="catalog-img">
+          <h3>fresa limpia</h3>
+          <p>500gr</p>
+        </div>
+        <div class="catalog-item">
+          <img src="fresa troceada mej f.png" alt="fresa troceada" class="catalog-img">
+          <h3>fresa troceada</h3>
+          <p>500gr</p>
+        </div>
+        <div class="catalog-item">
+          <img src="melon mej f.png" alt="melon troceado" class="catalog-img">
+          <h3>Melón troceado</h3>
+          <p>500gr</p>
+        </div>
+        <div class="catalog-item">
+          <img src="piña tropical mej f.png" alt="piña tropical troceada" class="catalog-img">
+          <h3>500gr</h3>
+          <p></p>
+        </div>
+        <div class="catalog-item">
+          <img src="sandia mej f.png" alt="sandia" class="catalog-img">
+          <h3>500gr</h3>
+          <p></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal para ampliar imagen -->
+  <div id="imgModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="caption"></div>
+  </div>
+<div style="text-align:center; margin: 2em 0;">
+  <a href="principal.html" class="cta" style="padding: 10px 24px; background:#e6c300; color:#fff; border-radius:6px; text-decoration:none;">Volver a la página principal</a>
+</div>
+  <footer style="margin-top:3em; padding:1em 0; text-align:center; background:#f5f5f5;">
+    &copy; 2025 Jomer Selección S.L. - Venta de aceites y productos locales
+  </footer>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://api.whatsapp.com/send/?phone=34647146352&text&type=phone_number&app_absent=0" 
+   target="_blank" 
+   style="
+     position: fixed;
+     bottom: 24px;
+     right: 24px;
+     z-index: 9999;
+     background: #25d366;
+     border-radius: 50%;
+     width: 56px;
+     height: 56px;
+     box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+     display: flex;
+     align-items: center;
+     justify-content: center;">
+  <img src="whatsap.png" alt="WhatsApp" style="width:34px; height:34px;"/>
+</a>
+
+
+  <!-- Script de ampliación de imágenes -->
+  <script>
+    document.querySelectorAll('.catalog-img').forEach(function(img) {
+      img.addEventListener('click', function() {
+        document.getElementById('imgModal').style.display = 'block';
+        document.getElementById('modalImg').src = img.src;
+        document.getElementById('caption').innerText = img.alt;
+      });
+    });
+    document.querySelector('.close').onclick = function() {
+      document.getElementById('imgModal').style.display = 'none';
+    };
+    window.onclick = function(event) {
+      if (event.target == document.getElementById('imgModal')) {
+        document.getElementById('imgModal').style.display = 'none';
+      }
+    };
+  </script>
+</body>
+</html>
