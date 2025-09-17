@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Aceite Jomer - Calidad y Tradición</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aceite Jomer: productores locales de aceite de Tudela, Navarra. Compra aceite directo del campo, descubre nuestros productos y recetas.">
+  <meta name="keywords" content="aceite, oliva, girasol, orujo, productos locales, Tudela, Navarra">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-logo">
+      <img src="jomer.jpg" alt="Jomer Logo">
+    </div>
+    <div class="nav-links">
+      <a href="todocatalogo.html">Todo el catálogo</a>
+      <a href="#catalogo">Catálogo aceite</a>
+      <a href="#nosotros">Sobre Nosotros</a>
+      <a href="#novedades">Novedades</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto" class="cta" style="display: inline-block; margin-right: 24px;">Comprar ahora</a>
+    </div>
+  </nav>
+
+  <header id="header">
+    <div class="header-banner">
+      <img src="portada-aceite.png" alt="Aceite local" class="banner-img">
+      <div class="header-text">
+        <h1>Aceite Jomer</h1>
+        <h2>El aceite más saludable, directo del campo a tu mesa</h2>
+        <a href="#catalogo" class="cta">Ver catálogo</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="catalogo">
+    <h2>Nuestros aceites estrella</h2>
+    <div class="catalog-list">
+      <div class="producto">
+        <img src="oliva.jpg" alt="Aceite de oliva virgen extra">
+        <h3>Aceite de Oliva Virgen Extra</h3>
+        <ul>
+          <li>Beneficio: Rico en polifenoles y antioxidantes</li>
+          <li>Certificado D.O. Navarra</li>
+          <li>Envío gratis pedidos desde 25€</li>
+        </ul>
+        <div class="precio">7,95€/botella</div>
+        <a href="#contacto" class="cta">Comprar</a>
+      </div>
+      <div class="producto">
+        <img src="girasol.jpg" alt="Aceite de girasol">
+        <h3>Aceite de Girasol</h3>
+        <ul>
+          <li>Ideal para freír y cocinar</li>
+          <li>Origen local garantizado</li>
+          <li>Botella 1L / 5L</li>
+        </ul>
+        <div class="precio">4,50€/botella</div>
+        <a href="#contacto" class="cta">Comprar</a>
+      </div>
+      <div class="producto">
+        <img src="orujo.jpg" alt="Aceite de orujo">
+        <h3>Aceite de Orujo</h3>
+        <ul>
+          <li>Gran rendimiento en hostelería</li>
+          <li>Cuidado y selección artesanal</li>
+        </ul>
+        <div class="precio">6,50€/botella</div>
+        <a href="#contacto" class="cta">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonios">
+    <h2>Opiniones de nuestros clientes</h2>
+    <div class="testimonios-list">
+      <blockquote>
+        “El aceite Jomer es ideal para mi cocina, muy sabroso y siempre fresco.”<br>
+        <span>- María L., Tudela</span>
+      </blockquote>
+      <blockquote>
+        “Rápido envío y atención de primera. Recomiendo al 100%.”<br>
+        <span>- Juan P., Pamplona</span>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      Somos productores y distribuidores de frutas, verduras y aceite en Tudela – Navarra, la «Capital de las Verduras».<br>
+      Desde nuestro almacén abastecemos comercios locales y clientes particulares en toda España.<br>
+      Comprar en Jomer es apostar por la calidad, la cercanía y el respeto a la naturaleza.
+    </p>
+  </section>
+
+  <section id="novedades">
+    <h2>Novedades</h2>
+    <h3>alcachofa confitada congelada</h3>
+    <p>Cultivada con cariño en tierras arcillosas con un PH perfecto para esta verdura
+     rica en vitaminas y con grandes propiedades.
+      El autentico sabor </p>
+      <p>descongelado y congelado</p>
+     <img src="alcachofa confitada descongelada mej f.png" alt="alcachofa confitada" style="max-width: 311px; height: auto;">
+     <img src="alcachofa confitada congelada mej f.png" alt="alcachofa confitada" style="max-width: 280px; height: auto;">
+    <h3>Recetas y consejos para disfrutar nuestro aceite</h3>
+    <a href="recetas.html" class="cta">Ver recetas</a>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes dudas o quieres solicitar información? Completa el formulario:</p>
+    <form action="https://formspree.io/f/xldwoabe" method="POST">
+      <div class="form-row">
+        <input type="text" name="nombre" placeholder="Tu nombre completo" required>
+        <input type="email" name="_replyto" placeholder="Tu correo electrónico" required>
+      </div>
+      <div class="form-row">
+        <input type="tel" name="telefono" placeholder="Teléfono (opcional)">
+        <select name="motivo">
+          <option value="">Motivo de contacto</option>
+          <option value="compra">Consulta de compra</option>
+          <option value="producto">Información sobre productos</option>
+          <option value="servicio">Atención al cliente</option>
+        </select>
+      </div>
+      <textarea name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+      <button type="submit" class="cta">Enviar consulta</button>
+    </form>
+    <div class="datos-contacto">
+      <p><strong>Teléfono:</strong> 609 47 50 18</p>
+      <p><strong>Correo:</strong> tienda@jomer.es</p>
+      <p><strong>Dirección:</strong> Ctra. Corella, s/n, 31500 Tudela, Navarra</p>
+      <p><strong>Horario:</strong> Lunes a Viernes, 8:00 – 16:00</p>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.185804972937!2d-1.6269983233690686!3d42.06063657122241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5a4f6416f8890b%3A0xc459049749e1c7b5!2sJomer%20Selecci%C3%B3n%20S.L%20-%20Frutas%20y%20Verduras%20Jomer!5e0!3m2!1sen!2ses!4v1757062490722!5m2!1sen!2ses" 
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="redes-sociales">
+      <a href="https://facebook.com/aceitejomer" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com/frutas_jomer/" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+    </div>
+    <p><a href="privacidad.html">Política de privacidad</a></p>
+  </section>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://api.whatsapp.com/send/?phone=34647146352&text&type=phone_number&app_absent=0" 
+   target="_blank" 
+   style="
+     position: fixed;
+     bottom: 24px;
+     right: 24px;
+     z-index: 9999;
+     background: #25d366;
+     border-radius: 50%;
+     width: 56px;
+     height: 56px;
+     box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+     display: flex;
+     align-items: center;
+     justify-content: center;">
+  <img src="whatsap.png" alt="WhatsApp" style="width:34px; height:34px;"/>
+</a>
+
+
+  <footer>
+    <div class="footer-logo">
+      <img src="jomer.jpg" alt="Jomer Logo">
+    </div>
+    <p>&copy; 2025 Jomer Selección S.L. - Venta de aceites y productos locales
+      <br>Diseñado con pasión en Tudela, Navarra
+    </p>
+  </footer>
+
+  <!-- Menú responsive y barra de novedades -->
+  <script>
+    // Añade sticky al navbar en scroll
+    window.onscroll = function() {
+      var navbar = document.getElementById('navbar');
+      if(window.pageYOffset > 20){
+        navbar.classList.add('sticky');
+      }else{
+        navbar.classList.remove('sticky');
+      }
+    };
+  </script>
+</body>
+</html>
